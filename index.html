@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>
+        <img src="img/pizza.png" alt="pizza logo" width="54px" id="logo" /><u>Santana
+        Bar - Menu</u>
+      </h1>
+    </div>
+    <div id="container">
+      <ul>
+        <li>
+          Pizzas
+          <button id="btnPizza" class="btnShow">
+            <img src="img/abajo.png" alt="flecha abajo" id="btnImg1" />
+          </button>
+        </li>
+        <div id="subseccion1" class="menuItems">
+          <div class="pizzaElement">
+            <div>
+              <h2>
+                Margarita<img
+                  src="img/margarita.jpg"
+                  alt="margarita"
+                  id="imgPizza1"
+                /><button class="btnAdd" id="margarita">+</button>
+              </h2>
+            </div>
+            <p>Salsa de tomate, albahaca y queso mozzarela.</p>
+            <p class="precio">Precio:<span id="precioMargarita">8</span>$</p>
+          </div>
+          <div class="pizzaElement">
+            <div>
+              <h2>
+                Hawaiana<img
+                  src="img/hawaiana.jpg"
+                  alt="hawaiana"
+                  id="imgPizza1"
+                /><button class="btnAdd" id="hawaiana">+</button>
+              </h2>
+            </div>
+            <p>Salsa de tomate, queso mozzarela, jamon y pina.</p>
+            <p class="precio">Precio:<span id="precioHawaiana">12</span>$</p>
+          </div>
+          <div class="pizzaElement">
+            <div>
+              <h2>
+                Primavera<img
+                  src="img/primavera.jpg"
+                  alt="primavera"
+                  id="imgPizza1"
+                /><button class="btnAdd" id="primavera">+</button>
+              </h2>
+            </div>
+            <p>
+              Salsa de tomate, tomates cherry, rúcula, prosciutto, queso
+              mozzarella y queso parmesano.
+            </p>
+            <p class="precio">Precio:<span id="precioPrimavera">14</span>$</p>
+          </div>
+        </div>
+        <li>
+          Hamburguesas
+          <button id="btnBurger" class="btnShow">
+            <img src="img/abajo.png" alt="down arrow" id="btnImg2" />
+          </button>
+        </li>
+        <div id="subseccion2" class="menuItems">
+          <div class="burgerElement">
+            <img src="img/pizza.png" alt="pizza" id="imgPizza" />
+            <div>
+              <h2>Clasica<img
+                src="img/clasica.jpg"
+                alt="clasica"
+                id="imgPizza1"
+              /><button class="btnAdd" id="clasica">+</button></h2>
+            </div>
+            <p>Carne, tomate, lechuga y salsas.</p>
+            <p class="precio">Precio:<span id="precioClasica">5</span>$</p>
+          </div>
+          <div class="burgerElement">
+            <img src="img/pizza.png" alt="pizza" id="imgPizza" />
+            <div>
+              <h2>
+                Cheese<img
+                src="img/cheese.png"
+                alt="cheese"
+                id="imgPizza1"
+              /><button class="btnAdd" id="cheese">+</button>
+              </h2>
+            </div>
+            <p>Carne, tomate, lechuga, queso cheddar y salsas.</p>
+            <p class="precio">Precio:<span id="precioCheese">6</span>$</p>
+          </div>
+          <div class="burgerElement">
+            <img src="img/pizza.png" alt="pizza" id="imgPizza" />
+            <div>
+              <h2>
+                Crispy<img
+                src="img/crispy.jpg"
+                alt="crispy"
+                id="imgPizza1"
+              /><button class="btnAdd" id="crispy">+</button>
+              </h2>
+            </div>
+            <p>Pollo, tomate, lechuga y salsas.</p>
+            <p class="precio">Precio:<span id="precioCrispy">7</span>$</p>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div id="orden">
+      Total:
+      <p id="total">0$</p>
+      <button id="reset">Reiniciar</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
